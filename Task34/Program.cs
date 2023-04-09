@@ -13,7 +13,7 @@ for (int i = 0; i < numbers.Length; i++)
     count++;
 }
 
-//Console.WriteLine($"В массиве всего {numbers.Length} чисел, {count} из них - чётные.");
+Console.WriteLine($"В массиве всего {numbers.Length} чисел, {count} из них - чётные.");
 
 void FillArrayRandomNumbers(int[] numbers)
 {

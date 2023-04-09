@@ -1,13 +1,13 @@
 ﻿Console.WriteLine("Введите размер массива  ");
-int size = Convert.ToInt32(Console.ReadLine()!);
+int size = int.Parse(Console.ReadLine()!);
 int[] numbers = new int[size];
 FillArrayRandomNumbers(numbers);
 //Console.WriteLine("массив: ");
 PrintArray(numbers);
 int sum = 0;
 
-for (int z = 0; z < numbers.Length; z+=2)
-    sum = sum + numbers[z];
+for (int i = 0; i < numbers.Length; i+=2)
+    sum = sum + numbers[i];
 
     Console.WriteLine($"всего {numbers.Length} чисел, сумма элементов cтоящих на нечётных позициях = {sum}");
 
