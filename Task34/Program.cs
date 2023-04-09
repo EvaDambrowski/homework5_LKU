@@ -2,8 +2,8 @@
 int size = int.Parse(Console.ReadLine()!);
 int[] numbers = new int[size];
 FillArrayRandomNumbers(numbers);
-Console.WriteLine("массив: ");
-//PrintArray(numbers);
+//Console.WriteLine("массив: ");
+PrintArray(numbers);
 int count = 0;
 
 
@@ -13,7 +13,7 @@ for (int i = 0; i < numbers.Length; i++)
     count++;
 }
 
-Console.WriteLine($"В массиве всего {numbers.Length} чисел, {count} из них - чётные.");
+//Console.WriteLine($"В массиве всего {numbers.Length} чисел, {count} из них - чётные.");
 
 void FillArrayRandomNumbers(int[] numbers)
 {
@@ -23,3 +23,13 @@ void FillArrayRandomNumbers(int[] numbers)
     }
 }
 
+void PrintArray(int[] numbers)
+{
+    Console.Write("[ ");
+    for(int i = 0; i < numbers.Length; i++)
+    {
+        Console.Write(numbers[i] + " ");
+    }
+    Console.Write("]");
+    Console.WriteLine();
+}
